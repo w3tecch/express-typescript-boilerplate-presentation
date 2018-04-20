@@ -1,0 +1,144 @@
+<section>
+  <div class="container">
+
+    <h1>Express.JS</h1>
+
+    <p>What comes with big projects...</p>
+
+    <pre><code class="long">
+/**
+ * Queries
+ */
+const RootQuery: GraphQLObjectType = new GraphQLObjectType({
+    name: 'Query',
+    fields: {
+        // Search
+        searchAll: new SearchAllQuery(),
+        searchMetadata: new SearchMetadataQuery(),
+        // WFM Import
+        getLastWFMImport: new GetLastWFMImportQuery(),
+        // User Import
+        getLastUserImport: new GetLastUserImportQuery(),
+        getUserImportBlacklist: new GetUserImportBlacklistQuery(),
+        getUserImportWhitelist: new GetUserImportWhitelistQuery(),
+        // Capability
+        getCapability: new GetCapabilityQuery(),
+        getCapabilities: new GetCapabilitiesQuery(),
+        getCapabilitiesByTeamId: new GetCapabilitiesByTeamIdQuery(),
+        getRecentCapabilities: new GetRecentCapabilitiesQuery(),
+        getUnusedCapabilities: new GetUnusedCapabilitiesQuery(),
+        // Skill
+        getSkill: new GetSkillQuery(),
+        getSkills: new GetSkillsQuery(),
+        getSkillsByUser: new GetSkillsByUserQuery(),
+        getSkillsByTeamId: new GetSkillsByTeamIdQuery(),
+        getSkillsByCapability: new GetSkillsByCapabilityQuery(),
+        getRecentSkills: new GetRecentSkillsQuery(),
+        getLongInactiveSkills: new GetLongInactiveSkillsQuery(),
+        // Tag
+        getTag: new GetTagQuery(),
+        getTags: new GetTagsQuery(),
+        // Developments
+        getDevelopment: new GetDevelopmentQuery(),
+        getMyDevelopments: new GetMyDevelopmentsQuery(),
+        getDevelopmentsByManager: new GetDevelopmentsByManagerQuery(),
+        // Development-Task
+        getDevelopmentTask: new GetDevelopmentTaskQuery(),
+        // User
+        getMe: new GetMeQuery(),
+        getUser: new GetUserQuery(),
+        getUsers: new GetUsersQuery(),
+        getUserByUsername: new GetUserByUsernameQuery(),
+        getUsersByManager: new GetUsersByManagerQuery(),
+        getUserProgressForSkillByTeam: new GetUserProgressForSkillByTeamQuery(),
+        getUserProgressForSkillByManager: new GetUserProgressForSkillByManagerQuery(),
+        getUsersByTeamAndCapability: new GetUsersByTeamAndCapabilityQuery(),
+        // User Settings
+        getSettingsForUser: new GetSettingsForUserQuery(),
+        // Team
+        getTeam: new GetTeamQuery(),
+        getTeams: new GetTeamsQuery(),
+        getTeamsByManager: new GetTeamsByManagerQuery(),
+        getTeamsWithSkillTarget: new GetTeamsWithSkillTargetQuery(),
+        getSkillTargetByTeamId: new GetSkillTargetByTeamIdQuery(),
+        validateSkillTargetForTeam: new ValidateSkillTargetForTeamQuery(),
+        // Notification
+        getNotificationTypes: new GetNotificationTypesQuery(),
+        getNotificationType: new GetNotificationTypeQuery(),
+        getNotificationsForUser: new GetNotificationsForUserQuery(),
+        // Capability-State
+        getCapabilityState: new GetCapabilityStateQuery(),
+        getCapabilityStates: new GetCapabilityStatesQuery(),
+        // Development-State
+        getDevelopmentState: new GetDevelopmentStateQuery(),
+        getDevelopmentStates: new GetDevelopmentStatesQuery(),
+        // Role
+        getRole: new GetRoleQuery(),
+        getRoles: new GetRolesQuery(),
+        // Language
+        getLanguage: new GetLanguageQuery(),
+        getLanguages: new GetLanguagesQuery()
+    }
+});
+
+
+/**
+ * Mutations
+ */
+const RootMutation: GraphQLObjectType = new GraphQLObjectType({
+    name: 'Mutation',
+    fields: {
+        // User import
+        setUserImportBlacklist: new SetUserImportBlacklistMutation(),
+        setUserImportWhitelist: new SetUserImportWhitelistMutation(),
+        // Capability
+        createCapability: new CreateCapabilityMutation(),
+        updateCapability: new UpdateCapabilityMutation(),
+        deleteCapability: new DeleteCapabilityMutation(),
+        // Skill
+        createSkill: new CreateSkillMutation(),
+        updateSkill: new UpdateSkillMutation(),
+        deleteSkill: new DeleteSkillMutation(),
+        setUserSkillInactive: new SetUserSkillInactiveMutation(),
+        // Tag
+        createTag: new CreateTagMutation(),
+        updateTag: new UpdateTagMutation(),
+        deleteTag: new DeleteTagMutation(),
+        // Developments
+        createDevelopments: new CreateDevelopmentsMutation(),
+        completeDevelopment: new CompleteDevelopmentMutation(),
+        approveDevelopment: new ApproveDevelopmentMutation(),
+        reactivateDevelopment: new ReactivateDevelopmentMutation(),
+        declineDevelopment: new DeclineDevelopmentMutation(),
+        // Development-Task
+        reviewDevelopmentTask: new ReviewDevelopmentTaskMutation(),
+        completeDevelopmentTask: new CompleteDevelopmentTaskMutation(),
+        // User
+        updateUser: new UpdateUserMutation(),
+        setDeputiesOfUser: new SetDeputiesOfUserMutation(),
+        // User Settings
+        updateSettingsForUser: new UpdateSettingsForUserMutation(),
+        // Notification
+        markNotificationAsRead: new MarkNotificationAsReadMutation(),
+        markAllNotificationsAsRead: new MarkAllNotificationsAsReadMutation(),
+        deleteNotification: new DeleteNotificationMutation(),
+        setSkillTargetForTeam: new SetSkillTargetForTeamMutation()
+    }
+});
+
+
+/**
+ * Export schema with all queries and mutations
+ */
+export const schema = new GraphQLSchema({
+    query: RootQuery,
+    mutation: RootMutation
+});
+    </code></pre>
+
+    <!--
+
+    -->
+
+  </div>
+</section>

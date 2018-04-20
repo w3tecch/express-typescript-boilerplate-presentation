@@ -1,0 +1,13 @@
+.flex-container {
+  display: flex;
+
+  .flex-box {
+    flex: 1;
+    padding: 15px;
+  }
+
+  .flex-center {
+    justify-content: center;
+    align-items: center;
+  }
+}

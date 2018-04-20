@@ -1,0 +1,32 @@
+section.box-center {
+  height: 100%;
+  padding: 0;
+
+  .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+  }
+
+  &.space-around > .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.text-left {
+  text-align: left;
+}
+
+.reveal a > img {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+}
+
+.no-frame {
+  border: none !important;
+  background: transparent !important;
+  box-shadow: none !important;
+}
