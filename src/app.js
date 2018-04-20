@@ -26,10 +26,15 @@ import pageArchitecure from './slides/131-architecure.slide.html';
 import pageStack from './slides/132-stack.slide.html';
 import pagePersistence from './slides/140-persistence.html';
 import pageService from './slides/141-service.html';
-import pageGetStated0 from './slides/150-get-started.html';
-import pageGetStated1 from './slides/151-get-started.html';
-import pageGetStated2 from './slides/152-get-started.html';
-import pageLetsCode from './slides/160-lets-code.html';
+import pageSeeding0 from './slides/150-seeding.html';
+import pageSeeding1 from './slides/151-seeding.html';
+// import pageSeeding2 from './slides/152-seeding.html';
+import pageQuality from './slides/155-quality.html';
+import pageFacts from './slides/156-facts.html';
+import pageGetStated0 from './slides/160-get-started.html';
+import pageGetStated1 from './slides/161-get-started.html';
+import pageGetStated2 from './slides/162-get-started.html';
+import pageLetsCode from './slides/180-lets-code.html';
 
 // -------------------------------------------------------------------------
 // Slides
@@ -52,6 +57,12 @@ const slides = [
   pageStack,
   pagePersistence,
   pageService,
+
+  pageSeeding0,
+  pageSeeding1,
+  // pageSeeding2,
+  pageQuality,
+  pageFacts,
 
   pageGetStated0,
   pageGetStated1,

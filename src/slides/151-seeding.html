@@ -1,0 +1,30 @@
+<section>
+  <div class="container">
+
+    <h1>Seeding</h1>
+    <h2>2. Seed Script</h2>
+    <p>A factory generate a new entity with fake data.</p>
+    <p>This can be used to seed data into the database or for testing.</p>
+    <pre><code class="typescript hljs">
+  export class CreateUsers implements Seed {
+
+    public async seed(factory: Factory, connection: Connection): Promise<any> {
+        await factory(User)({ roles: [] }).createMany(10);
+    }
+
+  }
+    </code></pre>
+    <pre><code class="typescript hljs">
+  ...
+  await factory(User)()
+      .map(async (user: User) => {
+          const pets: Pet[] = await factory(Pet)().createMany(2);
+          const petIds = pets.map((pet: Pet) => pet.Id);
+          await user.pets().attach(petIds);
+      })
+      .createMany(5);
+  ...
+    </code></pre>
+
+  </div>
+</section>
