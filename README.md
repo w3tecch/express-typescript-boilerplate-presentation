@@ -2,7 +2,7 @@
   <img src="./w3tec-logo.png" alt="w3tec" width="400" />
 </p>
 
-<h1 align="center">Presentation about express-typescript-boilerplate-</h1>
+<h1 align="center">Presentation about express-typescript-boilerplate</h1>
 
 <p align="center">
   <sub>Made with ❤️ by <a href="https://github.com/w3tecch">w3tech</a> & <a href="https://github.com/w3tecch/reveal.js-boilerplate/graphs/contributors">contributors</a></sub>

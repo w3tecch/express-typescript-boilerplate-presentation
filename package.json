@@ -1,13 +1,13 @@
 {
-  "name": "reveal.js-boilerplate",
-  "title": "reveal.js-boilerplate",
+  "name": "express-typescript-boilerplate-presentation",
+  "title": "express-typescript-boilerplate-presentation",
   "version": "1.0.0",
   "description": "A simple and comfortable way to make a presentation.",
   "main": "dist/index.html",
   "license": "MIT",
-  "repositoryName": "reveal.js-boilerplate",
-  "repository": "git+ssh://git@github.com/w3tec/reveal.js-boilerplate.git",
-  "homepage": "https://w3tecch.github.io/reveal.js-boilerplate",
+  "repositoryName": "express-typescript-boilerplate-presentation",
+  "repository": "git+ssh://git@github.com/w3tec/express-typescript-boilerplate-presentation.git",
+  "homepage": "https://w3tecch.github.io/express-typescript-boilerplate-presentation",
   "author": "w3tec.ch <info@w3tec.ch>",
   "contributors": [
     {
