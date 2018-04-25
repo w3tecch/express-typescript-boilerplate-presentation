@@ -1,6 +1,4 @@
-/**
- * FONT IMPORTS
- */
+@import "../../node_modules/highlight.js/styles/atom-one-light.css";
 @font-face {
   font-family: 'STARWARS';
   src: url('../../static/fonts/STARWARS.eot?') format('eot'), url('../../static/fonts/STARWARS.woff') format('woff'), url('../../static/fonts/STARWARS.ttf') format('truetype'), url('../../static/fonts/STARWARS.svg#STARWARS') format('svg');
@@ -11,6 +9,10 @@
 @import 'title';
 @import 'lead';
 @import 'opening';
+
+.dark-theme {
+  display: none;
+}
 
 .reveal {
   ul {
@@ -31,8 +33,7 @@
 
 h2 {
   font-family: $mainFont !important;
-  color: $oc-blue-4 !important;
+  color: $oc-gray-9 !important;
 }
 
-p code {
-  }
+p code {}
