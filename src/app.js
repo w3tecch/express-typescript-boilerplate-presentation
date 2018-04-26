@@ -82,6 +82,11 @@ Reveal.initialize({
   height: "100%",
 });
 
+Reveal.configure({
+  pdfMaxPagesPerSlide: 1,
+  showNotes: window.location.search.match(/show-notes/gi) ? true : false,
+});
+
 RevealMarkdown.initialize();
 
 hljs.initHighlightingOnLoad();

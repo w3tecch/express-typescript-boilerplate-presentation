@@ -2,6 +2,7 @@
  * CSS IMPORTS
  */
 @import "../../node_modules/reveal.js/css/reveal.css";
+// @import "../../node_modules/reveal.js/css/print/pdf.css";
 // @import "../../node_modules/highlight.js/styles/atom-one-dark.css";
 // @import "../../node_modules/highlight.js/styles/atom-one-light.css";
 
@@ -14,3 +15,7 @@
 @import './themes/star-wars-light/star-wars-light';
 @import 'theme';
 @import 'flex';
+
+.reveal pre code {
+  font-weight: 600;
+}
